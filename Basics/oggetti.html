@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Manipolazione del DOM</title>
+</head>
+<body>
+    <div id="name"></div>
+    <div id="job"></div>
+    
+    <script>
+    let persona = {
+        nome: 'Mario',
+        cognome: 'Rossi',
+        eta: 30,
+        professione: 'Ingegnere'
+
+    }
+
+
+    let name = persona.nome;
+    let professione = persona['professione'];
+    document.getElementById("name").innerHTML = name;
+    document.getElementById('job').innerHTML = professione;
+
+    </script>
+</body>
+</html>

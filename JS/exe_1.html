@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Manipolazione del DOM</title>
+</head>
+<body>
+    <button id="btn">Clicca qui!</button>
+    <p id="msg">Clicca sul pulsante per vedere il messaggio</p>
+
+    <script>
+        const myParagraph = document.getElementById("msg");
+
+        myParagraph.innerHTML = "Questo è il nuovo testo del paragrafo!";
+
+        const myButton = document.getElementById("btn");
+
+        myButton.addEventListener("click", function() {
+            alert("Il pulsante è stato cliccato!");
+        });
+
+
+    </script>
+</body>
+</html>

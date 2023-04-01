@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Do-While</title>
+</head>
+<body>
+    <p id="msg">Clicca sul pulsante per fare iniziare il programma!</p>
+    <button id="btn">Clicca qui!</button>
+    <div id="text"></div>
+    <script>
+    
+    let giorno;
+    let flag = 1;
+    const myText = document.getElementById('text')
+    const myElement = document.getElementById("btn");
+    myElement.style.backgroundColor = "red";
+	myElement.style.color = "white";
+
+    myElement.addEventListener("click", function() {
+        dofunction();
+    });
+    
+    function dofunction(){
+    do{
+        giorno = prompt('Inserisci un gionro della settimana!')
+        flag = 0;
+        switch(giorno) {
+            case "lun":
+                myText.style.backgroundColor = "yellow";
+                myText.innerHTML = "Questo è lunedi!";
+                break;
+            case "mar":
+                alert("Oggi è martedi!");
+                break;
+            case "mer":
+                alert("Oggi è mercoledi!");
+                break;
+            case "gio":
+                alert("Oggi è giovedi!");
+                break;
+            case "ven":
+                alert("Oggi è venerdi!");
+                break;
+            case "sab":
+                alert("Oggi è sabato!");
+                break;
+            case "dom":
+                alert("Oggi è domenica!");
+                break;
+            default:
+                alert("Non è un giorno della settimana!");
+                flag = 1
+                break;
+        }
+    }while(flag)
+}
+
+    </script>
+</body>
+</html>

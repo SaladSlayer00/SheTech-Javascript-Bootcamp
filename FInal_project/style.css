@@ -1,0 +1,163 @@
+html {
+    box-sizing: border-box;
+    height: 100%;
+  }
+  
+  *,
+  *::before,
+  *::after  {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    align-items: center;
+    background: linear-gradient(to right, #77add6, #4cee5a);
+    display: flex;
+    font-family: "Montserrat", sans serif;
+    font-display: swap;
+    height: inherit;
+    justify-content: center;
+  }
+  
+  .wrapper {
+    backdrop-filter: bluer(5.5px);
+    -webkit-backdrop-filter: blur(5.5px);
+    background: rgba(255, 255, 255, 0.75);
+    border: 1px solid rgba(255, 255, 255, 0.01);
+    border-radius: 16px;
+    box-shadow: 0 5px 30px solid rgba(255, 255, 255, 0.1);
+    -webkit-backdrop-filter: blur(4px);
+    background: rgba(255, 255, 255, 0.3);
+    border: 1px solid rgba(255, 255, 255, 0.34);
+    flex-basis: 400px;
+    height: 600px;
+    padding: 20px 35px;
+  }
+  
+  .screen {
+    backdrop-filter: bluer(5.5px);
+    -webkit-backdrop-filter: blur(5.5px);
+    background: rgba(255, 255, 255, 0.75);
+    border: 1px solid rgba(255, 255, 255, 0.01);
+    border-radius: 16px;
+    box-shadow: 0 5px 30px solid rgba(255, 255, 255, 0.1);
+    -webkit-backdrop-filter: blur(4px);
+    background: rgba(255, 255, 255, 0.3);
+    border: 1px solid rgba(255, 255, 255, 0.34);
+    flex-basis: 400px;
+    width: 326px;
+    padding: 20px;
+    font-size: 35px;
+    text-align: right;
+  }
+  
+  .calc-button-row {
+    display: flex;
+    justify-content: space-between;
+    margin: 5% 0;
+  }
+  
+  .calc-button {
+    backdrop-filter: blur(5.5px);
+    -webkit-backdrop-filter: blur(5.5px);
+    background: rgba(255, 255, 255, 0.75);
+    border: 1px solid rgba(255, 255, 255, 0.01);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(35, 35, 35, 0.1);
+    color: #232323;
+    flex-basis: 20%;
+    font-family: inherit;
+    height: 65px;
+  }
+  
+  .calc-button:last-child {
+    backdrop-filter: blur(5.5px);
+    -webkit-backdrop-filter: blur(5.5px);
+    border: 1px solid rgba(255, 255, 255, 0.01);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(35, 35, 35, 0.1);
+    color: #fff;
+    background: #6150de;
+    flex-basis: 20%;
+    font-family: inherit;
+    height: 65px;
+  }
+  
+  .calc-button:last-child:hover {
+    cursor: pointer;
+    background-color: inherit;
+  }
+  
+  .calc-button:hover {
+    cursor: pointer;
+    background-color: inherit;
+  }
+  
+  .double {
+    flex-basis: 47%;
+  }
+  
+  .triple {
+    flex-basis: 73%;
+  }
+
+  .help-button-row{
+    display: flex;
+    justify-content: right;
+    margin: 5% 0;
+  }
+
+  .help-button{
+    backdrop-filter: blur(5.5px);
+    -webkit-backdrop-filter: blur(5.5px);
+    border: 1px solid rgba(255, 255, 255, 0.01);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(35, 35, 35, 0.1);
+    color: #151414;
+    background: #4be348;
+    flex-basis: 20%;
+    font-family: inherit;
+    height: 65px;
+  }
+
+  .help-button:last-child{
+    backdrop-filter: blur(5.5px);
+    -webkit-backdrop-filter: blur(5.5px);
+    border: 1px solid rgba(255, 255, 255, 0.01);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(35, 35, 35, 0.1);
+    color: #151414;
+    background: #4be348;
+    flex-basis: 20%;
+    font-family: inherit;
+    height: 65px;
+  }
+
+  .help-button:last-child:hover {
+    cursor: pointer;
+    background-color: inherit;
+  }
+
+  select {
+    padding: 10px;
+    border: none;
+    background-color: #f2f2f2;
+    color: #333;
+    font-size: 16px;
+    border-radius: 5px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+  }
+  
+  select:hover {
+    cursor: pointer;
+    background-color: #ddd;
+  }
+
+  .help-button:hover {
+    cursor: pointer;
+    background-color: inherit;
+  }

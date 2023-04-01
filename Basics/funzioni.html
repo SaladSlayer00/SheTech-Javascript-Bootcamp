@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Manipolazione del DOM</title>
+</head>
+<body>
+    
+    <script>
+
+    function modulo(numero){
+        if(numero%2 ==0){
+            alert('Numero pari!')
+        } else {
+            alert('Numero dispari!')
+        }
+    }
+    while(1){
+        let numero;
+        numero = prompt('Inserisci un numero o \'stop\' per smettere di inserire: ')
+        if(numero=='stop'){
+            alert('Ciao Ciao!')
+            break;
+        }
+        modulo(numero)
+    }
+
+
+    </script>
+</body>
+</html>
